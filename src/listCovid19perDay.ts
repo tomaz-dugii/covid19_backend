@@ -3,9 +3,9 @@ import {Request, Response} from 'express'
 import {db} from './db'
 
 export async function listPlayers(req: Request, res: Response) {
-    db.multi('SELECT * FROM players')
+    db.multi('SELECT * FROM ')
         .then(function (data) {
-            console.log('List of players: ', data );
+            console.log('List of Covid19 daily data: ', data );
             return res.status(200).send(data);
         })
         .catch(function (error) {
