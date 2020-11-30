@@ -2,8 +2,8 @@
 import {Request, Response} from 'express'
 import {db} from './db'
 
-export async function listPlayers(req: Request, res: Response) {
-    db.multi('SELECT * FROM ')
+export async function listCovid19perDay(req: Request, res: Response) {
+    db.multi('SELECT * FROM players')
         .then(function (data) {
             console.log('List of Covid19 daily data: ', data );
             return res.status(200).send(data);
