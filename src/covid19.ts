@@ -1,6 +1,7 @@
 import express from "express";
 import {db} from './db';
 import { listCovid19perDay } from "./listCovid19perDay";
+import { usagesynopsis } from "./usagesynopsis";
 
 const app = express();
 const port = 3000;
