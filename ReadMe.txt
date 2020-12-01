@@ -8,3 +8,15 @@ Usage synopsis:
         * list covid per day:
             - http://localhost:3000/covidPerday
 
+        * list covid per day:
+            - http://localhost:3000/covidPerday
+
+        * list covid per week:
+            - http://localhost:3000/listTedenskiPodatki
+
+        * list milk data per week:
+            - http://localhost:3000/listMleko
+
+        * list butter data per week:
+            - http://localhost:3000/listMaslo
+
