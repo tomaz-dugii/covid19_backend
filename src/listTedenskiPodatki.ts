@@ -2,7 +2,7 @@
 import {Request, Response} from 'express'
 import {db} from './db'
 
-export async function listTadenskiPodatki(req: Request, res: Response) {
+export async function listTedenskiPodatki(req: Request, res: Response) {
     db.multi('SELECT * FROM tedenskipodatki')
         .then(function (data) {
             console.log('List of Covid19 Weekly data: ', data );
